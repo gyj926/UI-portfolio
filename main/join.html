@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap 101 Template</title>
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/bootstrap-theme.css" rel="stylesheet">
+<link href="../css/custom2.css" rel="stylesheet">
+<style>
+body {
+	
+	background-color: black;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #AD103C;
+  background-color: #dedede;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #AD103C;
+  background-color: #dedede;
+}
+ 
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -20px;
+}
+
+
+.image-row {	
+	width: 275px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+.image-row2 {	
+	width: 200px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+
+.row.h2 {
+	font-size: 30px;
+    color: white;
+    margin-left: 17px;
+    margin-top: 40px;
+}
+
+#footer {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: white;
+	font-size: 13px;
+}
+
+.image-banner {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: -20px;
+}
+
+.btn-Learn {
+	color: white;
+	font-size: 14px;
+	background-color: #AD103C;
+	margin-left: 146px;
+	margin-top: 52px;
+	margin-bottom: 49px;
+	width: 117px;
+	height: 42px;
+}
+
+.btn-Learn2 {
+	color: white;
+	font-size: 14px;
+	background-color: #AD103C;
+	margin-left: 146px;
+	margin-top: 52px;
+	margin-bottom: 49px;
+	width: 117px;
+	height: 42px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-login {
+
+ 	background-color: transparent;
+
+}
+
+.row {
+ margin-right: -4px;
+ margin-left: -15px;
+ text-align: center;
+}
+
+.row h2 {
+	font-size: 30px;
+	color: white;
+	margin-top: 56px;
+	text-align: initial;
+}
+
+.row h3 {
+	font-size: 18px;
+	color: white;
+	margin-top: 38px;
+	text-align: initial;
+}
+
+.row2 h2 {
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+
+.row2-2 {
+
+	text-align: center;
+}
+
+div.col-md-2 {
+
+	font-size: 20px;
+	text-align: end;
+	color: white;
+}
+
+#ppd p {
+
+	color: white;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.ppd {
+	
+	background-color: #dedede;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+
+
+.carousel-indicators{
+	bottom: 0px;
+    background: space;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.jumbotron {
+  padding: 30px 15px;
+  color: inherit;
+  margin-bottom: 0px;
+  background-color: #dedede;
+}
+
+p {
+  margin: 22px;
+}
+
+.join {
+	color: antiquewhite;
+    -webkit-text-stroke-width: medium;
+    font-size: 46px;
+    padding-top: 65px;
+}
+
+#join2 {
+	margin-left: -28px;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 33px;
+    line-height: inherit;
+    color: antiquewhite;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    -webkit-text-stroke: thin;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    color: lightgray;
+  }
+}
+
+  .scrollspy-example { 
+	position: relative;
+  	height: 200px; 
+   	margin-top: 10px; 
+ 	overflow: auto;
+    }
+    
+
+.scrollspy-example {
+    position: relative;
+    height: 200px;
+    margin-top: 10px;
+    overflow: auto;
+    margin-bottom: 20px;
+}    
+
+legend {
+	padding-top: 50px;
+}
+
+.form-horizontal .radio, .form-horizontal .checkbox {
+    min-height: 27px;
+    margin-bottom: 20px;
+}
+
+body {
+	color: lightgray;
+}
+</style>
+</head>
+<body>
+
+
+	<div class="container-fluid">
+		<h1>PROPAGANDA</h1>
+			<div class="row">
+				<div class="col-md-10"></div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-login">Login</button>
+					<span>l</span>
+					<button type="button" class="btn btn-login">Join</button>
+					</div>
+			</div>	
+		<nav class="navbar navbar-default" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="main.html">PROPAGANDA </a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav"  data-offset-top="140">
+					<li ><a href="aboutus.html">ABOUT US </a></li>
+					<li ><a href="flim.html">FLIM </a></li>
+					<li><a href="#calligraphy">CALLIGRAPHY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">BOARD <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="qa.html">자유게시판</a></li>
+							<li><a href="notice.html">질문게시판</a></li>
+						</ul></li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="검색">
+					</div>
+					<button type="submit" class="btn btn-default">Search</button>
+				</form>
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</nav>
+		<article>
+			
+		</article>
+	</div>
+	<!-- container 끝 -->
+
+
+	<div class="container" >
+		<div class="join">
+			<div class="col-md-12  cont">
+					<div class="col-md-12"  id="join2">JOIN</div>
+				</div>
+			</div>
+			</div>
+	<div class="container">
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label for="Name" class="col-xs-2 col-lg-2 control-label">회원구분</label>
+				<div class="col-xs-10 col-lg-10">
+					<label class="radio-inline"> <input type="radio"
+						name="optionsRadios" id="optionsRadios1" value="option1" checked>
+						개인회원
+					</label> <label class="radio-inline"> <input type="radio"
+						name="optionsRadios" id="optionsRadios1" value="option1" checked>
+						사업자
+					</label> <label class="radio-inline"> <input type="radio"
+						name="optionsRadios" id="optionsRadios1" value="option1" checked>
+						외국인
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email" class="col-xs-2 col-lg-2 control-label">회원인증</label>
+				<div class="col-xs-10 col-lg-10">
+					<div class="radio">
+						<label> <input type="radio" name="optionsRadios"
+							id="optionsRadios1" value="option1" checked> 메일인증
+						</label>
+					</div>
+					<div class="radio">
+						<label> <input type="radio" name="optionsRadios"
+							id="optionsRadios2" value="option2"> 휴대폰인증
+						</label>
+						<button style="color: black;">휴대폰인증</button>
+						<span class="help-block">(본인 명의의 휴대폰으로 휴대폰인증을 진행합니다.)</span>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<form class="form-horizontal" role="form">
+			<fieldset>
+				<legend>기본정보 </legend>
+				<div class="form-group">
+					<label for="Name" class="col-xs-2 col-lg-2 control-label">아이디</label>
+					<div class="col-xs-10 col-lg-10">
+						<input type="text" class="form-control"> <span
+							class="help-block">(영문소문자/숫자, 4~16자)</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-xs-2 col-lg-2 control-label">비밀번호</label>
+					<div class="col-xs-10 col-lg-10">
+						<input type="text" class="form-control"> <span
+							class="help-block">(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-xs-2 col-lg-2 control-label">비밀번호
+						확인</label>
+					<div class="col-xs-10 col-lg-10">
+						<input type="email" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-xs-2 col-lg-2 control-label">이름</label>
+					<div class="col-xs-10 col-lg-10">
+						<input type="email" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-xs-2 col-lg-2 control-label">주소</label>
+					<div class="col-xs-10 col-lg-10">
+						<button style="color: black;">주소찾기</button>
+						<input type="email" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-xs-2 col-lg-2 control-label">통신사</label>
+					<div class="col-xs-10 col-lg-10">
+						<select class="form-control">
+							<option>SKT</option>
+							<option>KT</option>
+							<option>LG</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-xs-2 col-lg-2 control-label">전화번호</label>
+					<div class="col-xs-10 col-lg-10">
+						<input type="email" class="form-control"> <span
+							class="help-block">(-를 제외하고 입력해주세요)</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-xs-2 col-lg-2 control-label">이메일</label>
+					<div class="col-xs-10 col-lg-10">
+						<input type="email" class="form-control">
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>전체 동의</legend>
+				<div class="form-group">
+					<div class="checkbox">
+						<label> <input type="checkbox" value=""> 이용약관 및
+							개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의합니다.
+						</label>
+					</div>
+					<div class="bs-example">
+					<div data-spy="scroll" data-target="#navbar-example2"
+						data-offset="0" class="scrollspy-example">
+						<h4 id="fat">[필수] 개인정보 수집 및 이용 동의</h4>
+							<p>1. 개인정보 수집목적 및 이용목적 가. 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산
+
+								콘텐츠 제공 , 구매 및 요금 결제 , 물품배송 또는 청구지 등 발송 , 금융거래 본인 인증 및 금융 서비스 나.
+								회원 관리 회원제 서비스 이용에 따른 본인확인 , 개인 식별 , 불량회원의 부정 이용 방지와 비인가 사용 방지 ,
+								가입 의사 확인 , 연령확인 , 만14세 미만 아동 개인정보 수집 시 법정 대리인 동의여부 확인, 불만처리 등
+								민원처리 , 고지사항 전달 2. 수집하는 개인정보 항목 : 이름 , 생년월일 , 성별 , 로그인ID , 비밀번호 ,
+								자택 전화번호 , 휴대전화번호 , 이메일 , 14세미만 가입자의 경우 법정대리인의 정보 3. 개인정보의 보유기간 및
+								이용기간 원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 다음의
+								정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다. 가. 회사 내부 방침에 의한 정보 보유 사유 o
+								부정거래 방지 및 쇼핑몰 운영방침에 따른 보관 : 1년 나. 관련 법령에 의한 정보보유 사유 o 계약 또는 청약철회
+								등에 관한 기록 -보존이유 : 전자상거래등에서의소비자보호에관한법률 -보존기간 : 5년 o 대금 결제 및 재화 등의
+								공급에 관한 기록 -보존이유: 전자상거래등에서의소비자보호에관한법률 -보존기간 : 5년 o 소비자 불만 또는
+								분쟁처리에 관한 기록 -보존이유 : 전자상거래등에서의소비자보호에관한법률 -보존기간 : 3년 o 로그 기록
+
+								-보존이유: 통신비밀보호법 -보존기간 : 3개월 ※ 동의를 거부할 수 있으나 거부시 회원 가입이 불가능합니다.</p>
+						</div>
+						<div class="checkbox">
+						<label><input type="checkbox" value="">개인정보 수집 및 이용에 동의합니다. 
+						</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">SMS 수신을 동의합니다.
+						</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">이메일 수신을 동의합니다. 
+						</label>
+					</div>
+					<div class="col-md-12" id="joinCheck">
+						<button type="submit" class="pull-right"  style="color:black;" >가입하기</button>
+					</div>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<hr>
+   <footer>
+   <div class="col-md-12">
+     <p id="footer">&copy; Untitled. All rights reserved. | Photos by Fotogrph | Design by TEMPLATED.</p>
+     </div>
+   </footer>
+  		
+
+
+	<script src="../js/jquery-3.5.1.js"></script>
+	<script src="../js/bootstrap.js"></script>
+    <script>
+       $('body').scrollspy({ target: '#navbar-example' })
+    </script>
+</body>
+</html>

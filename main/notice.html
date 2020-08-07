@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap 101 Template</title>
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/bootstrap-theme.css" rel="stylesheet">
+<link href="../css/custom2.css" rel="stylesheet">
+<style>
+body {
+	background-color: black;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
+	{
+	color: #AD103C;
+	background-color: #dedede;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus
+	{
+	color: #AD103C;
+	background-color: #dedede;
+}
+
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: -20px;
+}
+
+.image-row {
+	width: 275px;
+	margin-left: 0px;
+	margin-top: 50px;
+}
+
+.image-row2 {
+	width: 200px;
+	margin-left: 0px;
+	margin-top: 50px;
+}
+
+.row.h2 {
+	font-size: 30px;
+	color: white;
+	margin-left: 17px;
+	margin-top: 40px;
+}
+
+#footer {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: white;
+	font-size: 13px;
+}
+
+.image-banner {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: -20px;
+}
+
+.btn-Learn {
+	color: white;
+	font-size: 14px;
+	background-color: #AD103C;
+	margin-left: 146px;
+	margin-top: 52px;
+	margin-bottom: 49px;
+	width: 117px;
+	height: 42px;
+}
+
+.btn-Learn2 {
+	color: white;
+	font-size: 14px;
+	background-color: #AD103C;
+	margin-left: 146px;
+	margin-top: 52px;
+	margin-bottom: 49px;
+	width: 117px;
+	height: 42px;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+	color: white;
+	text-decoration: none;
+}
+
+.btn-login {
+	background-color: transparent;
+}
+
+.btn-write {
+	margin-top: 22px;
+	background-color: gainsboro;
+}
+
+.row {
+	margin-right: -4px;
+	margin-left: -15px;
+	text-align: center;
+}
+
+.row h2 {
+	font-size: 30px;
+	color: white;
+	margin-top: 56px;
+	text-align: initial;
+}
+
+.row h3 {
+	font-size: 18px;
+	color: white;
+	margin-top: 38px;
+	text-align: initial;
+}
+
+.row2 h2 {
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+
+.row2-2 {
+	text-align: center;
+}
+
+.row5 {
+	padding-top: 70px;
+}
+
+.row7 {
+	text-align: center;
+}
+
+.row8 {
+    padding-bottom: 25px;
+}
+
+
+div.col-md-2 {
+	font-size: 20px;
+	text-align: end;
+	color: white;
+}
+
+div.col-md-7 {
+	color: azure;
+	font-size: 36px;
+	-webkit-text-stroke-width: thin;
+	text-align: initial;
+	padding-bottom: 20px;
+}
+
+div.col-md-7 a {
+
+	color: currentcolor;
+    text-decoration: none;
+}
+
+div.col-md-5 {
+	text-align: end;
+}
+
+#ppd p {
+	color: white;
+	margin-top: 55px;
+	margin-bottom: 55px;
+}
+
+.ppd {
+	background-color: #dedede;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+.carousel-indicators {
+	bottom: 0px;
+	background: space;
+}
+
+.carousel-control {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+	filter: alpha(opacity = 50);
+	opacity: .5;
+}
+
+.jumbotron {
+	padding: 30px 15px;
+	color: inherit;
+	margin-bottom: 0px;
+	background-color: #dedede;
+}
+
+p {
+	margin: 22px;
+}
+
+.table {
+
+	color: aliceblue;
+}
+
+.active {
+	color: black;
+}
+
+.table-condensed {
+cursor: pointer;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: black;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+
+.form-control2 {
+  display: inline;
+  width: 200px;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-group2 {
+	padding-top: 47px;
+}
+
+.search {
+	height: 34px;
+    border-radius: 4px;
+}
+
+.btn-primary {
+	height: 36px;
+}
+</style>
+</head>
+<body>
+
+<div class="container-fluid">
+		<h1>PROPAGANDA</h1>
+			<div class="row">
+				<div class="col-md-10"></div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-login" onClick="location.href='login.html'">Login</button>
+					<span>l</span>
+					<button type="button" class="btn btn-login">Join</button>
+					</div>
+			</div>	
+		<nav class="navbar navbar-default" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="main.html">PROPAGANDA </a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav" data-offset-top="140">
+					<li ><a href="aboutus.html">ABOUT US </a></li>
+					<li ><a href="flim.html">FLIM </a></li>
+					<li><a href="#calligraphy">CALLIGRAPHY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">BOARD <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="qa.html">자유게시판</a></li>
+							<li><a href="notice.html">질문게시판</a></li>
+						</ul></li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="검색">
+					</div>
+					<button type="submit" class="btn btn-default">Search</button>
+				</form>
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</nav>
+		<article>
+			
+		</article>
+	</div>
+	<!-- container 끝 -->
+	
+	<div class="container">
+		<div class="row5">
+			<div class="row4">
+			<div class="col-md-12  cont">
+				<div class="row8">
+					<div class="col-md-7" ><a href="qa.html" class="tooltip-hide" data-toggle="tooltip" data-placement="top" title="상담원은 누군가의 소중한 가족입니다.">질문게시판</a></div>
+					<div class="col-md-5">
+					<button type="button" class="btn btn-write" onclick="location.href='write.html' " style="color:black;">글쓰기</button>
+					</div>
+				</div>
+				<table class="table table-condensed">
+			<thead>
+				<tr class="active">
+					<th>no.</th>
+					<th>title</th>
+					<th>writer</th>
+					<th>date</th>
+					<th>read</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>120</td>
+				<td>놀면 뭐하니?<span class="label label-default">New</span></td>
+				<td>유두래곤</td>
+				<td>2020.08.04</td>
+				<td>56</td>
+			</tr>
+			<tr>
+				<td>119</td>
+				<td onClick="location.href='reply.html'">&nbsp;&nbsp;&nbsp;ㄴ답변드립니다.<span class="label label-default">New</span></td>
+				<td>PROPAGANDA</td>
+				<td>2020.08.04</td>
+				<td>47</td>
+			</tr>
+			<tr>
+				<td>118</td>
+				<td>나도 사랑받는 사람이야</td>
+				<td>수발광희</td>
+				<td>2020.08.03</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<td>117</td>
+				<td onClick="location.href='reply.html'">&nbsp;&nbsp;&nbsp;ㄴ답변드립니다.<span class="label label-default">New</span></td>
+				<td>PROPAGANDA</td>
+				<td>2020.08.04</td>
+				<td>47</td>
+			</tr>
+			<tr>
+				<td>116</td>
+				<td>틱톡 틱톡</td>
+				<td>지석진</td>
+				<td>2020.08.03</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>115</td>
+				<td>몽환의 숲 또 불러도 되나요?</td>
+				<td>이말년</td>
+				<td>2020.08.03</td>
+				<td>41</td>
+			</tr>
+			<tr>
+				<td>114</td>
+				<td>신과 함께4</td>
+				<td>주호민</td>
+				<td>2020.08.02</td>
+				<td>41</td>
+			</tr>
+			<tr>
+				<td>113</td>
+				<td>반도 무대인사</td>
+				<td>강동원</td>
+				<td>2020.08.02</td>
+				<td>800</td>
+			</tr>
+			<tr>
+				<td>112</td>
+				<td onClick="location.href='reply.html'">&nbsp;&nbsp;&nbsp;ㄴ답변드립니다.<span class="label label-default">New</span></td>
+				<td>PROPAGANDA</td>
+				<td>2020.08.04</td>
+				<td>47</td>
+			</tr>
+			<tr>
+				<td>111</td>
+				<td>일없슴미다</td>
+				<td>강철비2</td>
+				<td>2020.08.01</td>
+				<td>5</td>
+			</tr>
+		</table>
+			</div>
+			</div>
+			</div>
+			</div>
+
+
+				
+	
+
+
+
+	<div class="container">
+		<div class=row7>
+		<div class="form-group2">
+					<select name=search class="search"  style="color:black;">
+						<option value='wr_subject'>제목</option>
+						<option value='wr_content'>내용</option>
+						<option value='wr_subject||wr_content'>글쓴이</option>
+					</select>
+					<input name=stx maxlength=3 size=10
+						class="form-control2">
+					<button class="btn btn-primary">검색</button>
+				</div>
+		<ul class="pagination">
+			<li class="page-item disabled"><a class="page-link" href="#">이전</a></li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">4</a></li>
+			<li class="page-item"><a class="page-link" href="#">5</a></li>
+			<li class="page-item"><a class="page-link" href="#">다음</a></li>
+		</ul>
+		</div>
+	</div>
+
+
+
+
+
+
+	<hr>
+		
+   <footer>
+   <div class="col-md-12">
+     <p id="footer">&copy; Untitled. All rights reserved. | Photos by Fotogrph | Design by TEMPLATED.</p>
+     </div>
+   </footer>
+  		
+
+
+	<script src="../js/jquery-3.5.1.js"></script>
+	<script src="../js/bootstrap.js"></script>
+    <script>
+      $('.carousel').carousel()
+    </script>
+</body>
+</html>

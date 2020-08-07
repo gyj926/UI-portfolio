@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap 101 Template</title>
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/bootstrap-theme.css" rel="stylesheet">
+<link href="../css/custom2.css" rel="stylesheet">
+<style>
+body {
+	background-color: black;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
+	{
+	color: #AD103C;
+	background-color: #dedede;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus
+	{
+	color: #AD103C;
+	background-color: #dedede;
+}
+
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: -20px;
+}
+
+.image-row {
+	width: 275px;
+	margin-left: 0px;
+	margin-top: 50px;
+}
+
+.image-row2 {
+	width: 200px;
+	margin-left: 0px;
+	margin-top: 50px;
+}
+
+.row.h2 {
+	font-size: 30px;
+	color: white;
+	margin-left: 17px;
+	margin-top: 40px;
+}
+
+#footer {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: white;
+	font-size: 13px;
+}
+
+.image-banner {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: -20px;
+}
+
+.btn-Learn {
+	color: white;
+	font-size: 14px;
+	background-color: #AD103C;
+	margin-left: 146px;
+	margin-top: 52px;
+	margin-bottom: 49px;
+	width: 117px;
+	height: 42px;
+}
+
+.btn-Learn2 {
+	color: white;
+	font-size: 14px;
+	background-color: #AD103C;
+	margin-left: 146px;
+	margin-top: 52px;
+	margin-bottom: 49px;
+	width: 117px;
+	height: 42px;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+	color: white;
+	text-decoration: none;
+}
+
+.btn-login {
+	background-color: transparent;
+}
+
+.row {
+	margin-right: -4px;
+	margin-left: -15px;
+	text-align: center;
+}
+
+.row h2 {
+	font-size: 30px;
+	color: white;
+	margin-top: 56px;
+	text-align: initial;
+}
+
+.row h3 {
+	font-size: 18px;
+	color: white;
+	margin-top: 38px;
+	text-align: initial;
+}
+
+.row2 h2 {
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+
+.row2-2 {
+	text-align: center;
+}
+
+div.col-md-2 {
+	font-size: 20px;
+	text-align: end;
+	color: white;
+}
+
+#ppd p {
+	color: white;
+	margin-top: 55px;
+	margin-bottom: 55px;
+}
+
+.ppd {
+	background-color: #dedede;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+.carousel-indicators {
+	bottom: 0px;
+	background: space;
+}
+
+.carousel-control {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+	filter: alpha(opacity = 50);
+	opacity: .5;
+}
+
+.jumbotron {
+	padding: 30px 15px;
+	color: inherit;
+	margin-bottom: 0px;
+	background-color: #dedede;
+}
+
+p {
+	margin: 22px;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow
+		ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out
+		.15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control2 {
+	display: block;
+	width: 100%;
+	height: 230px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow
+		ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out
+		.15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+@media ( min-width : 992px) {
+	.form-horizontal {
+		width: 70%;
+		margin: auto;
+		padding-top: 65px;
+	}
+}
+
+@media ( max-width : 992px) {
+	.form-horizontal {
+		width: 80%;
+		margin: auto;
+	}
+}
+
+.tb {
+	border-spacing: 0px 5px;
+	border-collapse: separate;
+}
+
+
+.row9 {
+    margin-left: 8.33333333%;
+    font-size: 53px;
+    -webkit-text-stroke-width: medium;
+    color: antiquewhite;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+#button {
+	padding-bottom: 122px;
+
+}
+
+div.media {
+	padding-top: 40px;
+    padding-left: 30px;
+}
+
+
+.media {
+	background-color: lightgrey;
+    margin-bottom: 38px;
+}
+
+.pull-right {
+    float: right !important;
+    color: black;
+}
+
+.media-left, .media-right, .media-body {
+    display: table-cell;
+    vertical-align: top;
+    color: black;
+}
+
+</style>
+</head>
+<body>
+
+
+	<div class="container-fluid">
+		<h1>PROPAGANDA</h1>
+		<div class="row">
+			<div class="col-md-10"></div>
+			<div class="col-md-2">
+				<button type="button" class="btn btn-login" >Login</button>
+				<span>l</span>
+				<button type="button" class="btn btn-login" onClick="location.href='join.html'">Join</button>
+			</div>
+		</div>
+		<nav class="navbar navbar-default" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="main.html">PROPAGANDA </a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav" data-offset-top="140">
+					<li><a href="aboutus.html">ABOUT US </a></li>
+					<li><a href="flim.html">FLIM </a></li>
+					<li><a href="#calligraphy">CALLIGRAPHY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">BOARD <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="qa.html">자유게시판</a></li>
+							<li><a href="notice.html">질문게시판</a></li>
+						</ul></li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="검색">
+					</div>
+					<button type="submit" class="btn btn-default">Search</button>
+				</form>
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</nav>
+		<article></article>
+	</div>
+	<!-- container 끝 -->
+
+	<div class="container" id="container">
+		<div class="row9">
+			<div class="col-md-12  cont">
+					<div class="col-md-12">CONTENT</div>
+				</div>
+			</div>
+			</div>
+			<hr>
+	<div class="container">
+		<form class="form-horizontal">
+			<table class="tb" style="width: 100%">
+				<tr>
+					<td class="col-md-3 col-xs-3"><label for="Name"
+						class="control-label" style="color:white;">작성자</label></td>
+					<td class="col-md-9 col-xs-9"><input type="text"
+						class="form-control"></td>
+				</tr>
+				<tr>
+					<td class="col-md-3 col-xs-3"><label for="title"
+						class="control-label" style="color:white;">글제목</label></td>
+					<td class="col-md-9  col-xs-9"><input type="text"
+						class="form-control"></td>
+				</tr>
+				<tr>
+					<td class="col-md-3 col-xs-3"><label for="file"
+						class="control-label" style="color:white;">파일</label></td>
+					<td class="col-md-9  col-xs-9"><input type="text"
+						class="form-control" ></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="col-md-12"><label for="content" style="color:white;">내용</label></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="col-md-12"><textarea
+							class="form-control2" id="content" name="content" rows="10"></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="col-md-12" id="button">
+						<button type="submit" class="pull-right">글목록</button>
+						<button type="submit" class="pull-right">수정</button>
+					</td>
+				</tr>
+			</table>
+			<div class="media">
+				<a class="pull-left" href="#"> <img class="media-object"
+					src="대학일기.png" alt="...">
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading">PROPAGANDA</h4>
+					답변드립니다.
+					<div class="media">
+						<a class="pull-left" href="#"> <img class="media-object"
+							src="대학일기.png" alt="...">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">PROPAGANDA</h4>
+							추가 문의사항 있으시면 새 글로 문의 부탁드립니다.
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+
+
+
+
+	<hr>
+
+	<footer>
+		<div class="col-md-12">
+			<p id="footer">&copy; Untitled. All rights reserved. | Photos by
+				Fotogrph | Design by TEMPLATED.</p>
+		</div>
+	</footer>
+
+
+
+	<script src="../js/jquery-3.5.1.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script>
+		$('.carousel').carousel()
+	</script>
+</body>
+</html>
